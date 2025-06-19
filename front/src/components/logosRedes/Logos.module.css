@@ -1,0 +1,44 @@
+.social {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-bottom: 20px;
+    position: relative; ;
+    top: -5px;
+  }
+  
+  .socialIcons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+  }
+
+  .socialIcons div a{
+    margin: 10px;
+
+  }
+
+  
+  .contentIcons {
+    min-width: 200px;
+
+  }
+    
+  .socialIcons span{
+   font-size: 15px;
+   margin-bottom: 10px;
+  }
+  .social img {
+    width: 24px;
+    height: auto;
+    margin-top: 5px;
+  }

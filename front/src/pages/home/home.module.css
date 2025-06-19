@@ -1,0 +1,280 @@
+@font-face {
+    font-family: 'Neulis';
+    src: url('../../fonts/fonnts.com-Neulis_Sans_Bold_Italic.otf') format('opentype');
+    font-weight: 100;
+    /* Hairline suele ser muy delgado */
+    font-style: bold;
+}
+
+
+@font-face {
+    font-family: 'Neulis2';
+    src: url('../../fonts/fonnts.com-Neulis_Neue_Medium.otf') format('opentype');
+    font-weight: 100;
+    /* Hairline suele ser muy delgado */
+    font-style: bold;
+}
+
+
+.homeBackground {
+    width: 100%;
+    height: 1850px;
+    position: relative;
+    top: -0px;
+    left: 0;
+    background-image: url("../../assets2/fondo.jpg");
+    background-size: cover;
+    /* background-position: center center;  */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    z-index: 1;
+
+}
+
+
+.containerLogo {
+    width: 100%;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.LogoImg {
+    width: 25%;
+    height: auto;
+    position: relative;
+    right: 60px;
+    top: 18vh;
+    z-index: 1;
+}
+
+
+.secondImg {
+    width: 100%;
+    z-index: 1;
+    height: 30px;
+}
+
+
+.titularIMG {
+    width: 40%;
+    left: -50px;
+    height: auto;
+    position: relative;
+    top: 18vh;
+
+}
+
+
+.contentText {
+    width: 100%;
+    text-align: center;
+    /* position: relative;
+    top: 77vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 300px;
+}
+
+.contentText p {
+    font-size: 19px;
+    font-family: 'Neulis2', sans-serif !important;
+    /* Usa 'sans-serif' como respaldo */
+    color: #1d40a0 !important;
+}
+
+.buttonLog {
+    width: 20%;
+    margin-top: 0px;
+    color: #296eaf !important;
+    z-index: 20;
+}
+
+.buttonLog:hover {
+    cursor: pointer;
+}
+
+.text2IMG {
+    width: 45%;
+    margin-top: 30px
+}
+
+.containerFooter {
+    margin-top: -25vh;
+}
+
+
+.footerRes {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+
+}
+
+@media (max-width: 1500px) {
+
+
+    .homeBackground {
+        width: 100%;
+        height: 1350px;
+        position: relative;
+        top: -0px;
+        left: 0;
+        background-image: url("../../assets2/fondo.jpg");
+        background-size: cover;
+        /* background-position: center center;  */
+        /* background-repeat: no-repeat; */
+        /* background-attachment: fixed; */
+        z-index: 1;
+
+    }
+
+    /* .contentText {
+         top: 83vh; 
+    } */
+
+    .text2IMG {
+        width: 35%;
+        margin-top: 30px
+    }
+
+    .contentText {
+        width: 100%;
+        text-align: center;
+        /* position: relative;
+        top: 100vh; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        bottom: 200px;
+    }
+
+}
+
+
+@media (max-width: 1200px) {
+
+    .contentText {
+        width: 100%;
+        text-align: center;
+        /* position: relative;
+        top: 100vh; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        bottom:200px;
+    }
+}
+
+
+@media (max-width: 950px) {
+
+    .homeBackground {
+        height: 140vh;
+        background-position: center center;
+
+        background-image: url("../../assets2/fondo_mobile.jpg");
+
+        /* background-attachment: fixed; */
+
+        padding-bottom: 60px;
+    }
+
+    .containerLogo {
+        padding-left: 0px;
+    }
+
+
+    .LogoImg {
+        width: 60%;
+        height: auto;
+        position: relative;
+        top: 9vh;
+        left: -10px;
+        z-index: 1;
+
+    }
+
+
+    .titularIMG {
+        width: 70%;
+        left: 0px;
+        height: auto;
+        position: relative;
+        top: 9.3vh;
+    }
+
+
+    .fadeDownRight {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+
+
+    .contentText {
+        top: 43vh;
+    }
+
+
+    .contentText p {
+        font-size: 17px;
+        font-family: 'Neulis', sans-serif;
+        /* Usa 'sans-serif' como respaldo */
+
+    }
+
+    .buttonLog {
+        width: 50%;
+        margin-top: 0px;
+        cursor: pointer;
+        color: #296eaf;
+    }
+
+    .text2IMG {
+        width: 95%;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+
+    .containerFooter {
+        margin-top: -4vw;
+        background-color: transparent;
+    }
+
+
+
+
+}
+
+/* @media (max-height:700px) {
+
+     .homeBackground {
+        height:220vh;
+    } 
+
+} */
+
+
+
+@media (max-width:381px) {
+    .homeBackground {
+        height: 165vh;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url("../../assets2/fondo_mobile.jpg");
+    }
+
+
+
+    .contentText {
+        top: 55vh;
+    }
+
+
+}

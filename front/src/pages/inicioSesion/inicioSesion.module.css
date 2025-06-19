@@ -1,0 +1,309 @@
+@font-face {
+  font-family: 'Omnes';
+  src: url('../../fonts/Korolev Bold Compressed.otf') format('opentype');
+  /* Cambié 'truetype' a 'opentype' si es necesario */
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neulis';
+  src: url('../../fonts/fonnts.com-Neulis_Neue_Bold.otf') format('opentype');
+  font-weight: 100;
+  /* Hairline suele ser muy delgado */
+  font-style: bold;
+}
+
+
+@font-face {
+  font-family: 'Neulis2';
+  src: url('../../fonts/fonnts.com-Neulis_Neue_Regular.otf') format('opentype');
+  font-weight: 100;
+  /* Hairline suele ser muy delgado */
+  font-style: bold;
+}
+
+.Fondo {
+  background-image: url("../../assets2/fondo2.jpg");
+  background-size: cover;
+
+}
+
+
+.container {
+  margin-top: 100px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.titleImg2 {
+  width: 55%;
+  position: relative;
+  right: 0px;
+  top: 0px;
+}
+
+.titularIMG {
+  width: 45%;
+  position: relative;
+  margin-top: 0px;
+}
+
+
+.titleImg {
+  width: 25%;
+  margin-top: -50px;
+}
+
+.logoImg {
+  width: 20%;
+  margin-top: -10px;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0px;
+  position: relative;
+  top: -40px;
+}
+
+.formGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.a {
+  margin-top: 50px;
+  font-family: 'Neulis', sans-serif;
+  /* Usa 'sans-serif' como respaldo */
+  letter-spacing: 1.4px;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.p {
+  margin-top: 40px;
+  font-family: 'Neulis', sans-serif;
+  /* Usa 'sans-serif' como respaldo */
+  letter-spacing: 1.4px;
+  color: white;
+  font-size: 16px;
+}
+
+
+.containerFooter {
+  margin-top: 100px;
+  padding-top: 100px;
+  padding-bottom: 30px;
+
+
+  /* position: absolute;
+  bottom: 0;
+  width: 100%;
+  border: 1px solid black; */
+}
+
+.ballonder2 {
+  position: absolute;
+  top: 13%;
+  right: 10%;
+  width: 10%;
+}
+
+.ballonder {
+  position: absolute;
+  bottom: 43%;
+  left: 10%;
+  width: 8%;
+}
+
+.ballon1zq {
+  position: absolute;
+  bottom: 16%;
+  right: 10%;
+  width: 8%;
+}
+
+.productosImg {
+  position: relative;
+  right: 30px;
+  top: -30px;
+  width: 17%;
+}
+
+
+/* 
+segundos estilos para el footer */
+.footer {
+  color: white;
+  text-align: center;
+  padding: 0px 0px;
+  font-family: 'Neulis', sans-serif;
+  margin-top: 0px;
+
+  /* 
+  position: absolute;
+  bottom: 0;
+  width: 100%; */
+}
+
+.links {
+  margin-bottom: 10px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.links a {
+  margin: 0 10px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: 'Neulis2', sans-serif !important;
+}
+
+.logoImg {
+  width: 10%;
+  margin-top: -10px;
+}
+
+.imgTexto {
+  margin-bottom: 75px;
+  width: 1200px;
+}
+
+.GracasImg{
+  margin-top: 70px;
+  width: 1000px;
+}
+
+@media (max-width: 768px) {
+
+
+  .Fondo {
+    background-image: url("../../assets2/fondoMobileLog.jpg");
+    background-size: cover;
+  }
+
+  
+  .imgTexto {
+  width: 90%;
+}
+
+
+
+  .productosImg {
+    position: relative;
+    right: 17px;
+    width: 75%;
+    top: -50px;
+  }
+
+  .formGroup {
+    flex-direction: column;
+  }
+
+
+  .title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .titularIMG {
+    width: 70%;
+    position: relative;
+  }
+
+
+  .titleImg {
+    width: 75%;
+  }
+
+  .LogoImg {
+    width: 60%;
+    margin-top: -70px;
+  }
+
+  .p {
+    padding: 18px;
+    margin-top: -15px;
+    font-size: 15px;
+  }
+
+  .a {
+    font-size: 15px;
+  }
+
+  .productosImg {
+    position: relative;
+
+
+  }
+
+  .containerFooter {
+    position: relative;
+    top: -100px;
+  }
+
+
+  /* footer 2 */
+
+
+
+  .footer {
+    color: white;
+    text-align: center;
+    padding: 0px 0px;
+    font-family: 'Neulis', sans-serif;
+    margin-top: 0px;
+
+
+    position: none;
+    bottom: none;
+    width: none;
+    margin-top: 20px;
+    position: relative;
+    top: 20px;
+  }
+
+
+  .links {
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+
+  .links a {
+    margin: 0 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Neulis2', sans-serif !important;
+    margin-top: 10px;
+  }
+
+  .brResp {
+    display: none;
+  }
+
+  .logoImg {
+    width: 50%;
+    margin-top: 10px;
+  }
+}

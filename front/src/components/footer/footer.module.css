@@ -1,0 +1,171 @@
+@font-face {
+  font-family: 'Neulis';
+  src: url('../../fonts/fonnts.com-Neulis_Neue_Bold.otf') format('opentype');
+  font-weight: 100;
+  /* Hairline suele ser muy delgado */
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Neulis2';
+  src: url('../../fonts/fonnts.com-Neulis_Neue_Regular.otf') format('opentype');
+  font-weight: 100;
+  /* Hairline suele ser muy delgado */
+  font-style: bold;
+}
+
+
+.footer {
+  background-color: transparent;
+  padding: 20px;
+  text-align: center;
+  font-size: 10px;
+  color: white !important;
+  /* position: relative;
+    top: -70px; */
+  font-family: 'Neulis', sans-serif !important;
+  /* Usa 'sans-serif' como respaldo */
+
+}
+
+.links {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.links a {
+  margin: 0 10px;
+  color: #ffffff !important;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Neulis2', sans-serif !important;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.promotion {
+  font-size: 12px !important;
+  color: #ffffff !important;
+  margin: 10px 0;
+  font-weight: 400;
+
+  font-family: 'Neulis2', sans-serif !important;
+}
+
+.promotion a {
+  font-size: 10px;
+  color: #fff6f6 !important;
+  text-decoration: none;
+}
+
+.promotion a:hover {
+  text-decoration: underline;
+}
+
+
+
+.logo {
+  margin-top: 10px;
+}
+
+.logo img {
+  width: 100px;
+}
+
+
+.logoIMG {
+  min-height: 50px;
+  min-width: 100px;
+}
+
+
+.productosImg {
+  position: relative;
+  right: 30px;
+  top: -30px;
+  width: 17%;
+}
+
+.brResp {
+  display: none;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  .footer {
+    /* background-color: #d09b5c; */
+    padding: 20px;
+    text-align: center;
+    font-size: 10px;
+    color: white !important;
+    /* position: relative;
+    top: -70px; */
+    font-family: 'Neulis', sans-serif !important;
+    /* Usa 'sans-serif' como respaldo */
+    max-width: 95%;
+    position: relative;
+    top: 0px;
+
+  }
+
+  .links {
+    flex-direction: column-reverse;
+    /* Coloca los enlaces en una columna */
+    gap: 5px;
+
+  }
+
+  .privSpan {
+    position: relative;
+    top: -12px;
+  }
+
+  .links a {
+    font-size: 18px !important;
+  }
+
+
+  .brResp {
+    display: flex;
+  }
+
+  .promotion {
+    font-size: 10px;
+    padding: 0 10px;
+    /* Reduce el espacio lateral */
+
+    text-align: justify;
+  }
+
+  .textjUST {
+    text-align: justify;
+  }
+
+  .social {
+    flex-direction: column;
+    /* Coloca los elementos sociales en una columna */
+    align-items: center;
+  }
+
+  .logoIMG {
+    width: 80px;
+    /* Reduce el tamaño del logo */
+  }
+
+  .socialIcons img {
+    width: 20px;
+    /* Reduce el tamaño del icono de redes sociales */
+    height: 20px;
+  }
+
+  .promotion br {
+    display: none;
+  }
+
+  .footer {
+    padding-top: 0px;
+  }
+}
