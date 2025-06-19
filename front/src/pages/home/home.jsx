@@ -91,7 +91,7 @@ const Home = () => {
         </div>
 
 
-        <div className={styles.contentText}  >
+        <div className={styles.contentText} >
 
 
           <p>Sube tu recibo de compra con productos participantes</p>
