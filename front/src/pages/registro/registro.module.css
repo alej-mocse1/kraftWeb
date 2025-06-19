@@ -54,6 +54,8 @@
 .titleImg {
   width: 25%;
   margin-top: -120px;
+  position: relative;
+  top: -40px;
 }
 
 
