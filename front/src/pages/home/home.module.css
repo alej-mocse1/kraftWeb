@@ -75,7 +75,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 370px;
+    bottom: 300px;
 }
 
 .contentText p {
@@ -149,7 +149,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        bottom: 200px;
+        bottom: 270px;
     }
 
 }
@@ -166,7 +166,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        bottom:200px;
+        bottom:250px;
     }
 }
 
