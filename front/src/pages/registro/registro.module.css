@@ -228,6 +228,17 @@
 }
 
 
+@media (max-width: 1500px) {
+
+
+  .container {
+    height: 1350px;
+  }
+
+
+}
+
+
 @media (max-width: 1200px) {
 
 
@@ -264,8 +275,8 @@
   }
 
   .imgTexto {
-  width: 90%;
-}
+    width: 90%;
+  }
 
 
 
