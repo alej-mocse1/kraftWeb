@@ -265,7 +265,7 @@
   .container {
     background-image: url("../../assets2/fondo_registro_mobile3.jpg");
     background-position: center center;
-    height: 260vh;
+    height: 170vh;
     /* Usa 'sans-serif' como respaldo */
   }
 
@@ -432,7 +432,7 @@
   .container {
     background-image: url("../../assets2/fondo_registro_mobile3.jpg");
     background-position: center center;
-    height: 276vh;
+    height: 200vh;
     border-bottom: 1px solid #0a83b7;
     /* Usa 'sans-serif' como respaldo */
   }
