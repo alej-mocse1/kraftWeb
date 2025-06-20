@@ -33,7 +33,7 @@ const InicioSesion = () => {
 
   useEffect(() => {
 
-    document.title = 'Inicia Sesión / KRAFT HEINZ: SABE A GANAR EN VERANO, SABE A KRAFT HEINZ';
+    document.title = ' Gracias / KRAFT HEINZ: SABE A GANAR EN VERANO, SABE A KRAFT HEINZ';
 
   }, []);
 

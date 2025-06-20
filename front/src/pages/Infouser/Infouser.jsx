@@ -53,16 +53,17 @@ const Infouser = () => {
 
                 result.message.forEach((usuario) => {
 
-                    if (usuario?.dataValues?.totalPoints > 0) {
-                        setTotalIMG(totalImg + 1);
-                        totalImg += 1;
-                    }
+                    // if (usuario?.dataValues?.totalPoints > 0) {
+                    //     setTotalIMG(totalImg + 1);
+                    //     totalImg += 1;
+                    // }
                     usuariosTotales.push(usuario)
                 });
 
 
 
                 setInfoUser(usuariosTotales);
+                setTotalIMG(usuariosTotales.length)
                 console.log("usuariosTotales", usuariosTotales);
 
                 setUsuariosTotal(result?.message?.length);
@@ -75,7 +76,6 @@ const Infouser = () => {
                     .filter((usuario) => usuario.images.length > 0);
 
                 setUsuarios(usuariosConImagen);
-                // setTotalIMG(totalImg)
                 console.log("Usuarios con imágenes:", usuariosConImagen);
                 setLoading(false);
 
