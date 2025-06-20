@@ -3,7 +3,7 @@
   src: url('../../fonts/fonnts.com-Neulis_Neue_Bold.otf') format('opentype');
   font-weight: 100;
   /* Hairline suele ser muy delgado */
-  font-style: bold;
+  /* font-style: bold; */
 }
 
 
@@ -12,7 +12,7 @@
   src: url('../../fonts/fonnts.com-Neulis_Neue_Regular.otf') format('opentype');
   font-weight: 100;
   /* Hairline suele ser muy delgado */
-  font-style: bold;
+  /* font-style: bold; */
 }
 
 .content {
@@ -47,6 +47,7 @@
     min-width: 665px;
     font-size: 17px;
     margin-top: 10px;
+    font-family: "Neulis", sans-serif;
 }
 
 

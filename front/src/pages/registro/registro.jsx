@@ -95,19 +95,21 @@ const Registro = () => {
 
   };
 
+
   const handleTeléfono = (e) => {
     const { name, value } = e.target;
 
+    // Eliminar todo lo que no sean letras ni espacios
+    const soloTexto = value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g, '');
+
     setFormData((prevData) => ({
       ...prevData,
-      "Teléfono": value
+      "Teléfono": soloTexto
     }));
 
-    setTouchTeléfono(true)
-
-
-
+    setTouchTeléfono(true);
   };
+
 
 
   const handleText = (e) => {
@@ -290,7 +292,7 @@ const Registro = () => {
 
               <Input
                 placeholder="Número de teléfono"
-                type="number"
+                type="text"
                 iconoIzq={iconoTel}
                 handleChange={handleTeléfono}
                 borderErr={touchTeléfono && formData.Teléfono == ""}
