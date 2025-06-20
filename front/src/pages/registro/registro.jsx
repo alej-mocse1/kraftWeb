@@ -67,33 +67,40 @@ const Registro = () => {
     if (name == "aceptaInfo") setTouchaceptaInfo(true)
   };
 
-  ///funciones para recolectar la info
+
   const handleName = (e) => {
-    const { name, value } = e.target;
+    const { value } = e.target;
+
+    // Permitir solo letras y espacios (con acentos y ñ)
+    const soloLetras = value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g, '');
 
     setFormData((prevData) => ({
       ...prevData,
-      "Nombres": value
+      "Nombres": soloLetras
     }));
 
-    setTouchName(true)
-
+    setTouchName(true);
   };
 
 
 
-  const handleCorreo = (e) => {
-    const { name, value } = e.target;
+const handleCorreo = (e) => {
+  const { value } = e.target;
 
+  // Regex básico para validar formato xxx@xxx.xxx
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  // Solo actualiza si el valor cumple el formato o está vacío (para permitir borrar)
+  if (value === '' || emailRegex.test(value)) {
     setFormData((prevData) => ({
       ...prevData,
       "Correo": value
     }));
+  }
 
-    setTouchCorreo(true)
+  setTouchCorreo(true);
+};
 
-
-  };
 
 
 const handleTeléfono = (e) => {
@@ -282,6 +289,7 @@ const handleTeléfono = (e) => {
                 handleChange={handleName}
                 borderErr={touchName && formData.Nombres == ""}
                 msjErr={"El nombre es obligatorio."}
+                value={formData.Nombres}
               />
 
 
@@ -309,7 +317,7 @@ const handleTeléfono = (e) => {
                 handleChange={handleCorreo}
                 borderErr={touchCorreo && formData.Correo == ""}
                 msjErr={"El correo es obligatorio."}
-                value={formData.email}
+                value={formData.Correo}
               />
 
             </div>
