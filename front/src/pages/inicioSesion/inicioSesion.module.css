@@ -227,6 +227,12 @@
   width: 900px;
 }
 
+.imgTexto2 {
+  margin-bottom: 75px;
+  width: 900px;
+}
+
+
 
 @media (max-width: 1500px) {
 
@@ -277,8 +283,15 @@
   .imgTexto {
     width: 90%;
     position: relative;
-    top: -50px;
+    top: -100px;
   }
+
+  .imgTexto2 {
+    width: 90%;
+    position: relative;
+    top: 0px;
+  }
+
 
 
 
@@ -437,14 +450,6 @@
     height: 150vh;
     border-bottom: 1px solid #0a83b7;
     /* Usa 'sans-serif' como respaldo */
-  }
-
-  
-  .imgTexto {
-    width: 90%;
-    position: relative;
-    top: -50px;
-    margin-bottom: 30px;
   }
 
 

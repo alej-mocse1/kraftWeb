@@ -328,7 +328,7 @@ const InicioSesion = () => {
 
           <div className={styles.formGroup} >
 
-            <img src={textoFooter} alt="" className={styles.imgTexto} />
+            <img src={textoFooter} alt="" className={styles.imgTexto2} />
 
           </div>
 
