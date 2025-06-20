@@ -104,18 +104,10 @@ const Home = () => {
             onClick={() => redirect("")}
           />
 
-
-          {/* <img
-            // data-aos="zoom-in"
-            src={text2IMG}
-            className={styles.text2IMG}
-          /> */}
-
-
-
-
-
         </div>
+
+
+        
         <div className={styles.footerRes}>
           <Footer></Footer>
         </div>
