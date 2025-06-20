@@ -87,16 +87,16 @@ const Registro = () => {
 const handleCorreo = (e) => {
   const { value } = e.target;
 
-  // Regex básico para validar formato xxx@xxx.xxx
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  // // Regex básico para validar formato xxx@xxx.xxx
+  // const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  // Solo actualiza si el valor cumple el formato o está vacío (para permitir borrar)
-  if (value === '' || emailRegex.test(value)) {
+  // // Solo actualiza si el valor cumple el formato o está vacío (para permitir borrar)
+  // if (value === '' || emailRegex.test(value)) {
     setFormData((prevData) => ({
       ...prevData,
       "Correo": value
     }));
-  }
+  // }
 
   setTouchCorreo(true);
 };
