@@ -218,7 +218,7 @@ const InicioSesion = () => {
         <div style={{ width: "100%", display: "flex", justifyContent: "center" }} >
 
 
-          <div className={styles.formGroup} style={{position:"relative", top:"200px"}}>
+          <div className={styles.formGroup} style={{position:"relative", top:"120px"}}>
 
             <img src={graciasImg} alt="" className={styles.imgTexto} />
 
