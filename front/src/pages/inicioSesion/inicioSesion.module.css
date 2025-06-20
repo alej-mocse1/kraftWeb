@@ -439,5 +439,14 @@
     /* Usa 'sans-serif' como respaldo */
   }
 
+  
+  .imgTexto {
+    width: 90%;
+    position: relative;
+    top: -50px;
+    margin-bottom: 30px;
+  }
+
+
 
 }
