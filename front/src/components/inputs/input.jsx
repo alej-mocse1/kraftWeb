@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./input.module.css";
 
-const Input = ({ type, placeholder, iconoIzq, iconoDer, handleChange, borderErr, msjErr }) => {
+const Input = ({ type, placeholder, iconoIzq, iconoDer, handleChange, borderErr, msjErr,value }) => {
     const [showPassword, setShowPassword] = useState(false);
 
     // Solo aplicar el toggle si el tipo original es password
@@ -29,6 +29,7 @@ const Input = ({ type, placeholder, iconoIzq, iconoDer, handleChange, borderErr,
                     name={type}
                     className={styles.inputField}
                     onChange={handleChange}
+                    value={value}
                     // style={{ border: borderErr ? "2px solid red" : "1px solid white" }}
                   
                 />

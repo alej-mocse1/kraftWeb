@@ -96,19 +96,19 @@ const Registro = () => {
   };
 
 
-  const handleTeléfono = (e) => {
-    const { name, value } = e.target;
+const handleTeléfono = (e) => {
+  const { name, value } = e.target;
 
-    // Eliminar todo lo que no sean letras ni espacios
-    const soloTexto = value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g, '');
+  // Eliminar todo lo que no sean números
+  const soloNumeros = value.replace(/[^0-9]/g, '');
 
-    setFormData((prevData) => ({
-      ...prevData,
-      "Teléfono": soloTexto
-    }));
+  setFormData((prevData) => ({
+    ...prevData,
+    "Teléfono": soloNumeros
+  }));
 
-    setTouchTeléfono(true);
-  };
+  setTouchTeléfono(true);
+};
 
 
 
@@ -297,6 +297,7 @@ const Registro = () => {
                 handleChange={handleTeléfono}
                 borderErr={touchTeléfono && formData.Teléfono == ""}
                 msjErr={"El teléfono es obligatorio."}
+                value={formData.Teléfono}
               />
 
               <div style={{ width: "100px" }} />
@@ -308,6 +309,7 @@ const Registro = () => {
                 handleChange={handleCorreo}
                 borderErr={touchCorreo && formData.Correo == ""}
                 msjErr={"El correo es obligatorio."}
+                value={formData.email}
               />
 
             </div>
