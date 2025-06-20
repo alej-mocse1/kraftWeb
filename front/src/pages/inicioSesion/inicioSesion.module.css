@@ -269,7 +269,7 @@
 @media (max-width: 768px) {
 
   .container {
-    background-image: url("../../assets2/fondo_registro_mobile3.jpg");
+    background-image: url("../../assets2/fondo_registro_mobile4.jpg");
     background-position: center center;
     height: 150vh;
     /* Usa 'sans-serif' como respaldo */
@@ -445,7 +445,7 @@
 @media (max-width: 376px) {
 
   .container {
-    background-image: url("../../assets2/fondo_registro_mobile3.jpg");
+    background-image: url("../../assets2/fondo_registro_mobile4.jpg");
     background-position: center center;
     height: 150vh;
     border-bottom: 1px solid #0a83b7;
